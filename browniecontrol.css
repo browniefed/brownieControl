@@ -1,0 +1,35 @@
+.browniecontrol {
+	position: relative;
+	cursor: e-resize;
+}
+
+.browniecontrol .slide {
+	height: 100%;
+}
+
+.browniecontrol .overlayslide {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	z-index: 999;
+	height: 100%;
+	background: #FFF;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+
+	-webkit-transition: opacity .1s ease;
+	-moz-transition: opacity .1s ease;
+	-o-transition: opacity .1s ease;
+	-ms-transition: opacity .1s ease;
+	transition: opacity .1s ease;
+}
+
+.browniecontrol:hover .overlayslide {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+	filter: alpha(opacity=10);
+	opacity: .10;
+}
